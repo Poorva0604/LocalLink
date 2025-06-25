@@ -1,0 +1,37 @@
+.result-page{
+    padding: 20px;
+    margin-top: 10%;
+    font-family: 'Segoe UI', sans-serif;
+}
+.result-grid{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 450px;
+    background-color: rgba(235, 226, 226, 0.852);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    border-radius: 12px;
+    font-family: 'Segoe UI', sans-serif;
+}
+.service-card{
+    line-height: 22px;
+    padding: 16px;
+}
+button{
+    align-self: center;
+    margin-left: 40%;
+    padding: 10px;
+    width: 300px;
+    border-radius: 12px;
+    border-style: none;
+    margin-top: 2%;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: rgba(235, 226, 226, 0.852);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    font-weight: 600;
+}
+button:hover{
+    background-color: rgb(58, 36, 36);
+    color: aliceblue;
+    font-size: 0.9em;
+}

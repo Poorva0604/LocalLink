@@ -1,0 +1,79 @@
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+  border-radius: 10px;
+}
+
+.addserviceform{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 140px;
+    background-color: rgba(235, 226, 226, 0.852);
+    width: 70%;
+}
+
+/* .file-upload{
+    display: flex;
+    flex-direction: row;
+    grid-column: span 2;
+} */
+ .file-upload{
+    display: flex;
+  flex-direction: row;
+  align-items: center; /* vertically align label and input */
+  gap: 10px; /* spacing between label and input */
+  grid-column: 2; /* so it spans the full width in grid */
+  margin: 10px;
+  white-space: nowrap; /* prevent label wrapping */
+  
+ }
+.addserviceform h2{
+    align-self: center;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* two columns */
+  gap: 20px;
+  max-width: 50%;
+  width: 100%;
+}
+
+.form-grid input{
+    width: 400px;
+    height: 30px;
+    padding:8px;
+    margin: 10px;
+    border-radius: 6px;
+    border-style: none;
+}
+.desc{
+    margin: 10px;
+    padding-left: 10px;
+    font-size: large;
+    width: 96%;
+    margin-left:8px;
+    border-radius: 8px;
+}
+.addserviceform button{
+    padding: 10px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 8px;
+    align-self: center;
+    border-style: none;
+    background-color: rgb(201, 195, 195);
+    font-weight: 600;
+}
+
+.addserviceform button:hover{
+    background-color: rgb(58, 36, 36);
+    color: aliceblue;
+    font-size: 0.9em;
+  }

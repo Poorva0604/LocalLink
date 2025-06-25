@@ -1,0 +1,40 @@
+.forgotpage{
+    display: flex;
+    align-items: center;
+    padding-top: 220px;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+}
+.pswdrecoveryform{
+    background-color: rgba(235, 226, 226, 0.852);
+    width: 450px;
+    padding-left: 40px;
+    border-radius: 20px;
+}
+.pswdrecoveryform h2{
+    padding-left: 110px;
+}
+.pswdrecoveryform label{
+    font-weight: 600;
+}
+.pswdrecoveryform input{
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+}
+.pswdrecoveryform button{
+    padding: 6px;
+    width: 220px;
+    height: 40px;
+    margin-left: 100px;
+    font-weight: 600;
+    border-radius: 12px;
+    border-style: none;
+    background-color: rgb(201, 195, 195);
+}
+.pswdrecoveryform button:hover{
+    background-color: rgb(58, 36, 36);
+    color: aliceblue;
+    font-size: 0.9em;
+}

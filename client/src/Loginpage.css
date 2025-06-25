@@ -1,0 +1,56 @@
+.loginform {
+    height: 100vh;           
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    padding: 70px;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .mainform {
+    border: 5px  rgb(58, 36, 36);  
+    background-color: rgba(235, 226, 226, 0.852);
+    padding: 10px;                
+    border-radius: 8px;           
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    width: 400px;   
+    font-weight: 600;   
+    font-size: 18px;    
+    padding-left: 40px;
+    height: 65%;
+  }
+  .mainform h2{
+    padding-left: 35%;
+  }
+  .mainform .success-message{
+    padding-left: 0px; 
+  }
+  .mainform input{
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+  }
+  .mainform button{
+    padding: 6px;
+    width: 220px;
+    height: 40px;
+    margin-left: 80px;
+    font-weight: 600;
+    border-radius: 12px;
+    border-style: none;
+    background-color: rgb(201, 195, 195);
+  }
+  .mainform button:hover{
+    background-color: rgb(58, 36, 36);
+    color: aliceblue;
+    font-size: 0.9em;
+  }
+  .mainform .links{
+    font-weight: 200;
+    font-size: smaller;
+    text-align: center;
+    padding: 0;
+  }
+  

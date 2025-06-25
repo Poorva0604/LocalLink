@@ -1,0 +1,85 @@
+.wholepage{
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+.services{
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.buttons{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 40px;
+}
+.addbutton{
+    padding: 6px;
+    width: 220px;
+    height: 40px;
+    margin-left: 80px;
+    font-weight: 600;
+    border-radius: 12px;
+    border-style: none;
+    background-color: rgb(151, 142, 142);
+}
+
+.addbutton:hover{
+    background-color: rgb(58, 36, 36);
+    color: aliceblue;
+    font-size: 0.9em;
+}
+.logoutbtn{
+    padding: 6px;
+    width: 220px;
+    height: 40px;
+    margin-left: 80px;
+    font-weight: 600;
+    border-radius: 12px;
+    border-style: none;
+    background-color: rgb(151, 142, 142);
+}
+
+.logoutbtn:hover{
+    background-color: rgb(58, 36, 36);
+    color: aliceblue;
+    font-size: 0.9em;
+}
+
+.service-module{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    background-color: rgba(235, 226, 226, 0.852);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    border-radius: 12px;
+    font-family: 'Segoe UI', sans-serif;
+}
+.each-service{
+    line-height: 22px;
+    padding: 16px;
+}
+
+.delete-btn{
+    padding: 8px;
+    width: 40%;
+    margin: 20px;
+    margin-left: 90px;
+    background-color: rgb(151, 142, 142);
+    border-style: none;
+    border-radius: 7px;
+    font-weight: 600;
+}
+.delete-btn:hover{
+    background-color: rgb(246, 102, 102);
+    color: azure;
+    font-weight: 700;
+}
