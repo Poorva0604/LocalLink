@@ -46,7 +46,9 @@ export default function Loginpage(){
             <form className="mainform">
             {msg === "You have logged in successfully" ? (
   <h2 className="success-message">{msg}</h2>
-) : msg === "You are already logged in" ? (
+) : msg === "Invalid Login Credentials. Try Again" ? (
+  <h2 className="invalid-message">{msg}</h2>
+): msg === "You are already logged in" ? (
   <h2 className="success-message">{msg}</h2>
 ):(
   <h2>{msg}</h2>)}

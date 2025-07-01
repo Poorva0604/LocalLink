@@ -26,6 +26,10 @@
   .mainform .success-message{
     padding-left: 0px; 
   }
+  .mainform .invalid-message{
+    padding-left: 0px;
+    font-size: larger;
+  }
   .mainform input{
     width: 350px;
     height: 30px;
