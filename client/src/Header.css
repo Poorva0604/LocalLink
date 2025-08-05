@@ -11,6 +11,7 @@
 }
 .top {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 0px;           
   margin: 0;
@@ -28,46 +29,43 @@ img {
     font-weight: 1000;
   font-size: 2.1em;
   color: rgb(58, 36, 36);
-  margin-left: 0px;  /* tweak this to bring text closer to the logo */
+  margin-left: 0px; 
 }
-ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;   
-    display: block;
-    background-color: rgb(99, 60, 21);
+
+ .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  list-style-type: none;
+  padding: 12px;
+  margin: 0;
+  background-color: rgb(99, 60, 21);
 }
-li{
-    float: left; 
+.nav-links {
+  display: flex;
+  gap: 25px;
 }
-li a{
-    display: block;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 400;
-    color: white;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
-    /* <--background-color: rgb(76, 144, 203);--> */
+
+.nav-link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
 }
-.profilebtn{
-  /* display: block; */
-    width: 44px;
-    height: 44px;
-    padding-top: 20px;
-    padding-left: 15px;
-    padding-bottom: 5px;
-    padding-right: 7px;
-    margin-left: 65%;
-    margin-right: 0;
-}
-li a:hover{
-  background-color:  rgb(41, 28, 12);
+.profilebtn {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  margin-right: 15px;
 }
 
 .profilebtn:hover{
   background-color:  rgb(41, 28, 12);
+}
+.nav-active {
+  padding: 6px;
+  background-color: rgb(41, 28, 12);
+  color: white;
+  border-radius: 4px;
 }

@@ -55,10 +55,10 @@ export default function Profile(){
         <>
             <div className="wholepage">
                 <h2>Name: {profile.name}</h2>
-                <h2>Your services</h2>
+                <h2>Your services:</h2>
                 <div className="services">
                     {profile.services.length===0?(
-                        <p>You have not added services</p>
+                        <p className="Noservice-class">You have not added services</p>
                     ):(profile.services.map(service=>(
                         <div className="service-module">
                             <div className="each-service">

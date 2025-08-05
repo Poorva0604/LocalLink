@@ -8,11 +8,13 @@
 .pswdrecoveryform{
     background-color: rgba(235, 226, 226, 0.852);
     width: 450px;
+    padding-top: 10px;
     padding-left: 40px;
     border-radius: 20px;
 }
 .pswdrecoveryform h2{
-    padding-left: 110px;
+    display: flex;
+    justify-content: center;
 }
 .pswdrecoveryform label{
     font-weight: 600;
@@ -37,4 +39,14 @@
     background-color: rgb(58, 36, 36);
     color: aliceblue;
     font-size: 0.9em;
+}
+.pswdrecoveryform .back-to-page img{
+  width: 20px;
+  height: 20px;
+}
+
+.pswdrecoveryform .back-to-page a img:hover {
+  color: black;
+  width: 22px;
+  height: 22px;
 }

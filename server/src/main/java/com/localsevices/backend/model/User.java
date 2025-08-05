@@ -12,7 +12,7 @@ import jakarta.persistence.OneToMany;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id; // ✅ proper primary key
+    private Long id; //primary key
 
     private String name;
     private String email;

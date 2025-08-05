@@ -1,4 +1,5 @@
 import React,{ useState } from "react";
+import { Link } from "react-router-dom";
 import "./Forgotpswdpage.css"
 export default function Forgotpswdpage(){
     const [email, setEmail] = useState('');
@@ -29,6 +30,7 @@ export default function Forgotpswdpage(){
     return(
         <div className="forgotpage">
             <form className="pswdrecoveryform">
+                <div className="back-to-page"><Link to="/loginpage"><img src="/back-img.png" alt="Logo"></img></Link></div>
             <h2>{msg}</h2><br></br>
                 <label>Enter Registered Email</label><br></br>
                 <input

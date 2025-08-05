@@ -1,15 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import axios from 'axios';
 import "./Addservice.css";
 export default function Addservice(){
-  //   const [formData, setFormData] = useState({
-  //   serviceprovider: '',
-  //   serviceName: '',
-  //   description: '',
-  //   location: '',
-  //   contact: '',
-  //   userId: ''
-  // });
   const[serviceprovider,setServiceprovider]=useState('');
   const[serviceName,setServiceName]=useState('');
   const[description,setDescription]=useState('');
@@ -24,7 +17,7 @@ export default function Addservice(){
    const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // ✅ Validate contact number
+    
     if (!/^\d{10}$/.test(contact)) {
       setSuccessMsg('contact should be 10 digit');
       return;
@@ -60,6 +53,7 @@ export default function Addservice(){
     return(
         <div className="form-wrapper">
         <form onSubmit={handleSubmit} className="addserviceform">
+            <div className="back-to-page"><Link to="/profile"><img src="/back-img.png" alt="Logo"></img></Link></div>
             <h2>Add Service</h2>
             <div className="form-grid">
             <input type="text" name="serviceprovider" placeholder="Service Provider or Company Name" value={serviceprovider} onChange={(e) => setServiceprovider(e.target.value)} required />

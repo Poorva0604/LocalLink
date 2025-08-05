@@ -1,9 +1,11 @@
+
 .loginform {
-    height: 100vh;           
+    height: 90vh;     
     display: flex;
     justify-content: center; 
     align-items: center;     
-    padding: 70px;
+    margin-top: 100px;
+    padding: 0;
     flex-direction: column;
     font-family: 'Segoe UI', sans-serif;
   }
@@ -16,15 +18,12 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.1); 
     width: 400px;   
     font-weight: 600;   
-    font-size: 18px;    
+    font-size: 16px;    
     padding-left: 40px;
-    height: 65%;
   }
-  .mainform h2{
-    padding-left: 35%;
-  }
-  .mainform .success-message{
-    padding-left: 0px; 
+  .simple-login{
+    align-items: center;
+    margin-left: 155px;
   }
   .mainform .invalid-message{
     padding-left: 0px;
@@ -33,6 +32,7 @@
   .mainform input{
     width: 350px;
     height: 30px;
+    padding: 10px;
     border-radius: 10px;
     border-style: none;
   }
@@ -57,4 +57,37 @@
     text-align: center;
     padding: 0;
   }
-  
+  .mainform .success-message{
+    font-size: large;
+    display: flex;
+    justify-content: center;
+  }
+  .mainform .simple-register{
+    font-size: larger;
+    display: flex;
+    justify-self: center;
+    margin-right: 55px;
+  }
+
+.mainform .back-to-page a {
+  text-decoration: none;
+  color: rgb(64, 61, 61);
+}
+.mainform .back-to-page a img{
+  width: 20px;
+  height: 20px;
+}
+.mainform .back-to-page a img:hover {
+  color: black;
+  width: 22px;
+  height: 22px;
+}
+.mainform .profile-link{
+  padding-top: 5px;
+  color: black;
+  font-size: small;
+}
+.mainform .profile-link:hover{
+  color: rgb(45, 44, 44);
+  font-weight: 200;
+}

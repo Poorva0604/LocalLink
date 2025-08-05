@@ -42,8 +42,11 @@ export default function Loginpage(){
         
     }
     return(
+        
         <div className="loginform">
             <form className="mainform">
+                {!loginstatus && (<div className="back-to-page"><Link to="/"><img src="/back-img.png" alt="Logo"></img></Link></div>)} 
+                {loginstatus && (<div className="profile-link"><Link to="/profile">Go to Profile</Link></div>)}
             {msg === "You have logged in successfully" ? (
   <h2 className="success-message">{msg}</h2>
 ) : msg === "Invalid Login Credentials. Try Again" ? (
@@ -51,7 +54,7 @@ export default function Loginpage(){
 ): msg === "You are already logged in" ? (
   <h2 className="success-message">{msg}</h2>
 ):(
-  <h2>{msg}</h2>)}
+  <h2 className="simple-login">{msg}</h2>)}
                 <label>Email</label><br></br>
                 <input
                 type="email"
@@ -78,5 +81,6 @@ export default function Loginpage(){
                 
             </form>
         </div>
+        
     );
 }

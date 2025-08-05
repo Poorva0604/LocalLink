@@ -17,13 +17,10 @@ public class Service {
     private String description;
     private String serviceprovider;
     private String location;
-    //private String imageUrl;
     private Long contact;
 
     @ManyToOne
     private User user;
-
-    // Getters and Setters
 
     public Long getId() {
         return id;
@@ -71,14 +68,6 @@ public class Service {
     public void setLocation(String location) {
         this.location = location;
     }
-
-    // public String getImageUrl() {
-    //     return imageUrl;
-    // }
-
-    // public void setImageUrl(String imageUrl) {
-    //     this.imageUrl = imageUrl;
-    // }
 
     public User getUser() {
         return user;

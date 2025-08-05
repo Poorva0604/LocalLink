@@ -3,20 +3,23 @@
     margin-top: 10%;
     font-family: 'Segoe UI', sans-serif;
 }
-.result-grid{
-    margin-top: 0px;
+ .result-grid {
     display: flex;
-    flex-direction: row;
-    width: 450px;
+    flex-wrap: wrap;           
+    gap: 20px;                 
+    justify-content: center;  
+    margin-top: 20px;
+}
+.service-card {
+    width: 300px;
+    padding: 16px;
     background-color: rgba(235, 226, 226, 0.852);
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 12px;
     font-family: 'Segoe UI', sans-serif;
-}
-.service-card{
     line-height: 22px;
-    padding: 16px;
 }
+
 button{
     align-self: center;
     margin-left: 40%;

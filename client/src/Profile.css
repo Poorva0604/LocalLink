@@ -7,12 +7,6 @@
     height: 100vh;
     font-family: 'Segoe UI', sans-serif;
 }
-.services{
-    height: 60%;
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-}
 .buttons{
     margin-top: 40px;
     display: flex;
@@ -51,6 +45,26 @@
     background-color: rgb(58, 36, 36);
     color: aliceblue;
     font-size: 0.9em;
+}
+/* .Noservice-class{
+    height: 100px;
+} */
+ .services {
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Noservice-class {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #555;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .service-module{

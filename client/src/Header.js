@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css"
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 export default function Header(){
     const [isLoggedIn,setIsLoggedIn]=useState(false);
     useEffect(() => {
@@ -23,9 +24,22 @@ export default function Header(){
             <div className="top"><img src="/weblogo.png" alt="Logo"></img>
             <h2 className="webname">LocalLink</h2></div>
             <ul className="navbar">
+                {/* <div className="nav-links">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
-                <li><Link to="/loginpage">Add Your Service</Link></li>
+                {!isLoggedIn &&
+                <li><Link to="/loginpage">Add Your Service</Link></li>}
+                </div> */}
+                <div className="nav-links">
+                <NavLink to="/" className={({ isActive }) => `nav-link ${isActive ? 'nav-active' : ''}`}>Home</NavLink>
+<NavLink to="/about" className={({ isActive }) => `nav-link ${isActive ? 'nav-active' : ''}`}>About</NavLink>
+{!isLoggedIn && (
+  <NavLink to="/loginpage" className={({ isActive }) => `nav-link ${isActive ? 'nav-active' : ''}`}>
+    Add Your Service
+  </NavLink>
+)}
+</div>
+
                 {isLoggedIn && 
                 <Link to="/profile"><img className="profilebtn" src="/profile-icon.png" alt="profile"></img></Link> }
             </ul>

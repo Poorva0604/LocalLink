@@ -1,56 +1,70 @@
-.homepage{
-    background-color: rgb(240, 238, 236);
-    display: grid;
-    margin-top: 180px;
-    height: 50vh;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    place-content: center;
-    width: 700px;
-    justify-content: center;
-    margin-left: 300px;
-    overflow: auto;
-  scrollbar-width: none;
+ .homepage {
+  background-color: rgb(240, 238, 236);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 180px auto 0 auto;
+  width: 90%;
+  max-width: 700px;
+  padding: 50px 20px 20px 20px;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: 'Segoe UI', sans-serif;
+  overflow: auto;
+  scrollbar-width: none;
 }
 
-.homepage h2{
-    padding-left: 37%;
-    color: rgb(58, 36, 36);
+.homepage h2,
+.homepage h3 {
+  text-align: center;
+  color: rgb(58, 36, 36);
 }
+
 .homepage::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
-.serach-box{
-    margin-top: 10px;
+
+.serach-box {
+  margin-top: 10px;
+  width: 100%;
 }
-.serach-box form{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+
+.serach-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.serach-box form select{
-    padding: 9px;
-    margin-left: -40px;
-    width: 120%;
-    border-radius: 8px;
-    border-style: none;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+
+.serach-box form select {
+  padding: 9px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.serach-box form .search-btn{
-    padding: 6px;
-    width: 220px;
-    height: 40px;
-    margin-left: 10px;
-    font-weight: 600;
-    border-radius: 12px;
-    border-style: none;
-    background-color: rgb(201, 195, 195);
+
+.serach-box form .search-btn {
+  padding: 6px;
+  width: 100%;
+  height: 40px;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  background-color: rgb(201, 195, 195);
+  margin: 0 auto;
+}
+
+.serach-box form button:hover {
+  background-color: rgb(58, 36, 36);
+  color: aliceblue;
+  font-size: 0.9em;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .homepage {
+    margin-top: 100px;
+    padding: 30px 15px;
   }
-.serach-box form button:hover{
-    background-color: rgb(58, 36, 36);
-    color: aliceblue;
-    font-size: 0.9em;
 }
